@@ -17,8 +17,6 @@ public class CalenderSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Set the Current day to the Base Starting day, Default: Season 0, Day 0.
-        SetCurrentDay(Season,Day);
 
         // Go through all the Seasons and Each day of the season and run through the probability set by each Date for
         // X Event to occur.
@@ -50,6 +48,8 @@ public class CalenderSystem : MonoBehaviour
             }
         }
         
+        // Set the Current day to the Base Starting day, Default: Season 0, Day 0.
+        SetCurrentDay(Season,Day);
 
         // Update All the Visuals to correspond with the Starting Month.
         UpdateVisuals(Season);
@@ -97,6 +97,7 @@ public class CalenderSystem : MonoBehaviour
         // Set the current day to the new date.
         SetCurrentDay(Season, Day);
     }
+
 
     public void NextSeason()
     {
@@ -158,6 +159,7 @@ public class CalenderSystem : MonoBehaviour
         
     }
 }
+
 
 
 // Season Class, Holds Information Generally about the Season
